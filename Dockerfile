@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:16
 
 ARG APP_DIR=app
 RUN mkdir -p ${APP_DIR}
@@ -11,4 +11,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
